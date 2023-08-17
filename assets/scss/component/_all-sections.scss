@@ -1,0 +1,136 @@
+/* ===================================================================
+Start: Mid Body
+=================================================================== */
+.main-body {
+  flex: 1 0 calc(95% - 15px);
+  padding: 0 58px;
+}
+
+/* ===================================================================
+Start: Profile Header
+=================================================================== */
+.profile-header {
+  padding: 0;
+
+}
+
+.profile-card {
+  padding: 30px;
+  border-radius: $border-radius-lg;
+  background-color: $white;
+  height: 100%;
+
+  .user-icon {
+    display: inline-block;
+    position: relative;
+
+    .btn-icon {
+      padding: 6px;
+      background-color: $primary;
+      color: $white;
+      font-size: 12px;
+      width: 32px;
+      height: 32px;
+      border-radius: $border-circle;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+    }
+  }
+
+  &-heading {
+    padding: 8px 28px;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 40px;
+    border-radius: $border-radius;
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 18px;
+      border-radius: 2px;
+      background-color: $primary;
+      position: absolute;
+      top: 8px;
+      left: 14px;
+    }
+  }
+
+  &-billing {
+    @extend .profile-card-heading;
+    margin-top: 0;
+
+    &::before{
+      content: none;
+    }
+  }
+}
+
+.profile-summary {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  padding: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .profile-rupee-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: $black-30;
+    color: $success;
+    padding: 8px;
+    border-radius: $rounded-pill;
+
+    .bx-rupee {
+      padding: 2px;
+      color: $white;
+      background-color: $warning;
+      border-radius: $border-circle;
+      border: 1px dashed $success;
+      box-sizing: border-box;
+      background-clip: content-box;
+      position: relative;
+
+      &::after {
+        content: "\eb19";
+        font-size: 5px;
+        padding: 2px;
+        background-color: $success;
+        color: $white;
+        border-radius: $border-circle;
+        position: absolute;
+        top: -4px;
+        right: -5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* ===================================================================
+Start: Table
+=================================================================== */
+.table-section {
+  margin: 30px 0;
+  padding: 30px 0;
+  background-color: $white;
+  border-radius: $border-radius-lg;
+
+  .sub-title {
+    padding: 0 30px;
+  }
+}
+
+table {
+  &.data-table {
+    padding: 20px 0;
+  }
+  th,td {
+    font-size: $font-size-sm;
+  }
+}

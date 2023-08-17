@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tab Title -->
+  <title>NewsReach Assignment</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- Boxicon Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="/assets/css/style-min.css">
+</head>
+
+<body class="">
+
+  <main class="d-flex">
+    <!-- ========================== Aside: Start ========================== -->
+    <aside>
+      <nav>
+        <ul class="menu-list list-unstyled">
+          <li class="menu-list-item">
+            <a href="javascript:;" class="nav-link nav-link-logo">
+              <img src="/assets/images/webp/Logo-NR.webp" alt="News Reach Logo" width="30" height="30">
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="javascript:;" class="nav-link">
+              <span class="bx bxs-dashboard"></span>
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="javascript:;" class="nav-link">
+              <span class="bx bx-check-square"></span>
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="javascript:;" class="nav-link">
+              <span class="bx bx-wallet-alt"></span>
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="javascript:;" class="nav-link">
+              <span class="bx bx-help-circle"></span>
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="javascript:;" class="nav-link">
+              <span class="bx bxs-cog"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- ========================== Aside: Ends ========================== -->
+
+    <!-- ========================== Main Body: Start ========================== -->
+    <section class="main-body">
+
+      <!-- ========================== Header: Start ========================== -->
+      <header>
+        <h1>Profile Details</h1>
+        <div class="right-info">
+          <button type="button" class="btn btn-icon btn-notification" aria-labelledby="Notifications">
+            <span class="bx bx-bell"></span>
+          </button>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/assets/images/webp/user-small.webp" alt="User Profile" width="40" height="40">
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+              <li><a class="dropdown-item" href="#">Change Password</a></li>
+              <li><a class="dropdown-item" href="#">Change Picture</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- ========================== Header: Ends ========================== -->
+
+      <!-- ========================== Profile Header: Start ========================== -->
+      <section class="profile-header">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="profile-card text-center">
+              <div class="user-icon">
+                <img src="/assets/images/webp/user-img.webp" alt="User Image">
+                <button type="button" class="btn btn-icon btn-primary">
+                  <span class="bx bx-edit-alt"></span>
+                </button>
+              </div>
+              <h5 class="user-name fw-semibold">Nolan Philps</h5>
+              <div class="d-inline-flex align-items-center gap-1">
+                <small class="d-inline-block">PER01948857</small>
+                <a href="javascript:;" class="text-black d-inline-flex align-items-center justify-content-center">
+                  <span class="bx bx-copy"></span>
+                </a>
+              </div>
+
+              <form class="text-center mt-3">
+                <div class="row">
+                  <label for="userRole" class="col-sm-6 col-form-label text-end">User Role</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control-plaintext" readonly id="userRole" value="Advertiser">
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="accountType" class="col-sm-6 col-form-label text-end">Account Type</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control-plaintext" readonly id="accountType" value="Personal (PER)">
+                  </div>
+                </div>
+              </form>
+
+              <h6 class="bg-secondary text-start profile-card-heading">Personal Information</h6>
+              <h6 class="text-start profile-card-billing">Billing Information</h6>
+            </div>
+          </div>
+          <div class="col md-8">
+            <div class="profile-summary">
+              <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
+                <h5 class="sub-title mb-0">Personal Details</h5>
+                <p class="profile-rupee-badge">
+                  <span class="bx bx-rupee"></span>
+                  <span>Super Profile</span>
+                </p>
+              </div>
+
+              <div class="mb-3">
+                <label for="userName" class="col-form-label">Name <sup class="text-primary fw-bold">*</sup></label>
+                <input type="text" class="form-control-plaintext text-black70 fs-6" id="userName" placeholder="Nolan Philips" readonly>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="mb-md-0 mb-3">
+                    <label for="contNum" class="col-form-label">Contact Number <sup class="text-primary fw-bold">*</sup></label>
+                    <input type="text" class="form-control-plaintext text-black70 fs-6" id="contNum" placeholder="+91 98360 98360" readonly>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="mb-md-0 mb-3">
+                    <label for="email" class="col-form-label">Email Address</label>
+                    <input type="email" class="form-control-plaintext text-black70 fs-6" id="email" placeholder="nolan.philips@newsreach.in" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-summary">
+              <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
+                <h5 class="sub-title mb-0">Account Details</h5>
+                <img src="/assets/images/webp/On.webp" alt="verified badge">
+              </div>
+
+              <div class="mb-4">
+                <label for="userName" class="col-form-label">Account & Type <sup class="text-primary fw-bold">*</sup></label>
+                <div class="row gap-sm-0 gap-3">
+                  <div class="col-md-4 col-sm-6">
+                    <select class="form-select bg-secondary" aria-label="Select Type">
+                      <option selected>Personal</option>
+                      <option value="1">Public</option>
+                      <option value="2">Mandatory</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <input type="text" class="form-control" id="userName" placeholder="Sole Proprietor" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="individualPricing" class="col-form-label fs-6">Individual Pricing</label>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="showInFront" checked>
+                      <label class="form-check-label" for="showInFront">
+                        Show in Front-end
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-0">
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="preferredPaymentMode" class="col-form-label fs-6">Preferred Payment Mode</label>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="d-flex align-items-center gap-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          NR Wallet
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Net Banking
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================== Profile Header: Ends ========================== -->
+
+      <!-- ========================== Orders Datatable: Start ========================== -->
+      <section class="table-section">
+        <h5 class="sub-title">Orders</h5>
+        <div class="table-responsive">
+          <table id="myTable" class="table order-table" style="width:100%">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Client Name</th>
+                <th>Package</th>
+                <th>Ordered on</th>
+                <th>Total(NRC)</th>
+                <th>Agent Name</th>
+                <th>Status</th>
+                <th><span class="bx bx-refresh"></span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Talan Curtis</td>
+                <td>Custom</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Madelyn Lipshutz</td>
+                <td><span class="badge rounded-pill bg-warning">Payment Pending</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Makenna Rhiel Madsen</td>
+                <td>FE Guj South</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Lindsey Levin</td>
+                <td><span class="badge rounded-pill bg-info">Payment Received</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>            
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Aspen Kenter</td>
+                <td>Guj-Premium</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Zain Dias</td>
+                <td><span class="badge rounded-pill bg-blue">Set Active</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Chance Culhane</td>
+                <td>FOC Order</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Tiana Vetrovs</td>
+                <td><span class="badge rounded-pill bg-purple">Content Updated</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Ahmad Calzoni</td>
+                <td>National Wire</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>National Wire</td>
+                <td><span class="badge rounded-pill bg-blue-light">Content Approved</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Mira Korsgaard</td>
+                <td>Custom</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Nolan Vaccaro</td>
+                <td><span class="badge rounded-pill bg-blue-bright">Publishing...</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Talan Kenter</td>
+                <td>English Silver</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Ann Kenter</td>
+                <td><span class="badge rounded-pill bg-success">Link Uploaded</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Link Uploaded</td>
+                <td>Custom</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Maren Passaquindici Arcand</td>
+                <td><span class="badge rounded-pill bg-gray">Expired</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Leo Schleifer</td>
+                <td>Custom</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Jocelyn Press</td>
+                <td><span class="callout callout-gray rounded-pill">Closed</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>402-7498623-04163</td>
+                <td>Cheyenne Passaquindici Arcand</td>
+                <td>Guj-Premium</td>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>13/02/23</span>
+                    <span>10:24:39 pm</span>
+                  </div>
+                </td>
+                <td>1,59,300</td>
+                <td>Mira Schleifer</td>
+                <td><span class="callout callout-info rounded-pill">Draft</span></td>
+                <td>
+                  <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <span class='bx bx-dots-vertical-rounded'></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">View</button></li>
+                      <li><button class="dropdown-item" type="button">Edit</button></li>
+                      <li><button class="dropdown-item" type="button">Delete</button></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- ========================== Orders Datatable: Ends ========================== -->
+  
+      <!-- ========================== Footer: Start ========================== -->
+      <!-- <footer class="mt-auto text-center border-top py-2">
+        <div class="container-fluid">
+          <span class="text-gray">This is footer</span>
+        </div>
+      </footer> -->
+      <!-- ========================== Footer: Ends ========================== -->
+    </section>
+    <!-- ========================== Main Body: Ends ========================== -->
+  </main>
+
+  <script src="/assets/js/javascript-lib-min.js"></script>
+</body>
+
+</html>

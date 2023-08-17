@@ -1,0 +1,19 @@
+aside {
+  background-color: $secondary;
+  flex: 1 0 5%;
+  box-shadow: $box-shadow;
+}
+
+.menu-list {
+  &-item {
+    .nav-link {
+      display: inline-block;
+      font-size: 24px;
+      padding: 14px 28px;
+
+      &-logo {
+        padding: 25px;
+      }
+    }
+  }
+}
